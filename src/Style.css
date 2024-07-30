@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding-top: 60px;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient( to bottom, #402E7A 50%, #EB3678 );
+    background-image: url("background/background.jpg");
+    background-size: 100%;
+    font-family: "Oswald", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.notch {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 156px;
+    height: 40px;
+    z-index: 1;
+    background-color: black;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+main{
+    width: 300px;
+    height: max-content;
+    min-height: 300px;
+    background-color: #EEE;
+    opacity: 0.9;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    padding: 56px 30px 30px;
+    border: 10px solid;
+    box-sizing: border-box;
+}
+
+main form{
+    border: 6px solid #FFF;
+    background-color: #FFF;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+main form input {
+    padding: 10px;
+}
+
+main form button {
+    padding-right: 10px;
+}
+
+main form input, 
+main form button{
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #FFF;
+}
+
+main form i{
+    opacity: 0.7;
+}
+
+main .result{
+    padding-top: 20px;
+    text-align: center;
+}
+
+main .result .name{
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main .temperature img{
+    filter: drop-shadow(0 19px 29px #EB36EB );
+}
+
+main .temperature figcaption{
+    font-size: 3em;
+}
+
+main .description{
+    padding: 10px 0 30px;
+}
+
+main ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+main li{
+    background-color: #FFB200;
+    color: #FFF;
+    border-radius: 10px;
+    padding: 20px 10px;
+    background-image: linear-gradient( to bottom, transparent 50%, #EB3678);
+    font-weight: bold;
+    font-size: small;
+}
+
+main li:nth-child(2){
+    background-color: #005C78;
+}
+
+main li:nth-child(3){
+    background-color: #402E7A;
+}
+
+main ul li i{
+    font-size: 2em;
+    margin: 20px 0;
+    display: block!important;
+}
+
+main.error{
+    animation: errorEffect 0.3s linear 1;
+}
+@keyframes errorEffect{
+    0%{
+        transform: translate(10px, 5px)
+    }
+    25%{
+        transform: translate(-5px, 0)
+    }
+    50%{
+        transform: translate(8px, 2px)
+    }
+    75%{
+        transform: translate(-2px, 5px)
+    }
+    100%{
+        transform: translate(0, 0); 
+    }
+}
