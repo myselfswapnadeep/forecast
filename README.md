@@ -1,7 +1,7 @@
 # Weather Forecast Web-App
 The OpenWeatherMap API provides access to weather data from around the world.
 
-Before we start, it's crucial to have a basic understanding of HTML (HyperText Markup Language), CSS (Cascading Style Sheets), and JavaScript. These are the building blocks of web development.
+Before we start, it's crucial to have a basic understanding of HTML ( HyperText Markup Language ), CSS ( Cascading Style Sheets ), and JavaScript. These are the building blocks of web development.
 
 Understanding the Basics == >>
 == HTML is used to structure the content on the web page.
